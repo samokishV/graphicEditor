@@ -1,0 +1,116 @@
+﻿<link rel=stylesheet href='style.css'>
+<script src='script.js'> </script>
+
+<div style='width:700px; margin:auto' id='all'>
+<div class='Toolbar'>
+<div style='margin-left:4px; margin-right:3px'>
+<img src='icons/eraser8_5.png' title='Ластик' id='eraser' onclick='changeFigure("eraser", this)'> 
+<img src='icons/pen2.png' title='Карандаш' id='pen' onclick='changeFigure("pen", this)'> <br>
+<img src='icons/line3.png' title='Линия' id='line' onclick='changeFigure("line", this)'> 
+<img src='icons/text2.png' title='Надпись' id='text' onclick='changeFigure("text", this)'> <br>
+<img src='icons/rect4.png' title='Прямоугольник' id='rect' onclick='changeFigure("rect", this)' > 
+<img src='icons/round_rect2.png' id='roundRect' title='Скругленный прямоугольник' onclick='changeFigure("roundRect", this)'> <br>
+<img src='icons/circle.png' title='Круг' id='circle'  onclick='changeFigure("circle", this)' > 
+<img src='icons/ellipse3.png' title='Эллипс' id='ellipse' onclick='changeFigure("ellipse", this)' > 
+</div>
+<div class='options'>
+<div class='span1' title='Только обводка' id="stroke" onclick='changeFigureStyle("stroke", this)'> </div>
+<div class='span2' title='Заливка и обводка' id="fill_and_stroke"  onclick='changeFigureStyle("fill_and_stroke", this)'> </div>
+<div class='span3' title='Только заливка' id="fill" onclick='changeFigureStyle("fill", this)'> </div>
+</div>
+<div class='color'>
+<input type='color' class='color2' id='fillColor' value='#FFFFFF' title='цвет заливки' onchange='changeColor(); drawText(context3)'> </input><br>
+<input type='color' class='color1' id='strokeColor' value='#000000' title='цвет обводки' onchange='changeColor(); drawText(context3)'> </input>
+</div>
+</div>
+<canvas id='example2' width='600' height='400'> </canvas>
+
+<div class='separator'> &nbsp; </div>
+
+<div id='option1' class='ToolbarOption'>
+<p>
+Прозрачность
+<input type='range' min='0.1' max='1' value="1" step='0.1' onchange='change_value(); drawText(context3)' id='opasity'>
+<span id='opasity_value'></span>
+</p>
+</div>
+<div id='option2' class='ToolbarOption2'>
+<p>
+Обводка
+<input type='range' min='1' max='10' value="1" step='1' onchange='change_value2(); drawText(context3)' id='strokeWidth'>
+<span id='strokeWidth_value'></span>
+</p>
+</div>
+
+<div class='separator2'> &nbsp; </div>
+
+<div class='Toolbar2' id='text1'>
+<select id='family' title='шрифт' onchange='drawText(context3)'>
+<option> Arial</option>
+<option> Arial Black </option>
+<option> Comic Sans MS </option>
+<option> Courier New </option>
+<option> Georgia </option>
+<option> Impact </option>
+<option> Times New Roman </option>
+<option> Trebuchet MS </option>
+<option> Verdana </option>
+</select>
+<select class='razmer' id='razmer' title='кегль' onchange='drawText(context3)' >
+<option value='8'> 8  </option>
+<option value='9'> 9  </option>
+<option value='10'> 10 </option>
+<option value='11'> 11 </option>
+<option value='12'> 12 </option>
+<option value='14'> 14 </option>
+<option value='16'> 16 </option>
+<option value='18'> 18 </option>
+<option value='20'> 20 </option>
+<option value='22'> 22 </option>
+<option value='24'> 24 </option>
+<option value='26'> 26 </option>
+<option value='28'> 28 </option>
+<option value='36'> 36 </option>
+<option value='48'> 48 </option>
+<option value='72' selected> 72 </option>
+</select>
+<select id='styl' title='начертание' onchange='drawText(context3)'>
+<option> обычый </option>
+<option> курсив </option>
+<option> жирный </option>
+<option> жирный курсив</option>
+</select>
+</div>
+
+<div id='special_option' class='ToolbarHidden'>
+<p>
+Режимы пера
+<select id='pen_type'>
+<option value='simple'> обычное перо </option>
+<option value='h'> зеркальное 1 (H) </option>
+<option value='v'> зеркальное 2 (V) </option>
+<option value='hv'> зеркальное 3 (HV) </option>
+</select>
+</p>
+</div>
+
+<div id="empty" class='ToolbarHidden'>
+</div>
+<button id='option3' class='btn' onclick='fonovka();'>
+Очистить холст
+</button>
+
+
+<div class='separator2'> &nbsp; </div>
+
+<div class='Toolbar2' id='text2'>
+<input class='stroka' id='stroka' placeholder='Введите Ваш текст и подтвердите ввод'> </input>
+</div>
+<button id='text3' class='btn' onclick='drawText(context3)'>
+Подтвердить ввод
+</button>
+
+<div class='separator2'> &nbsp; </div>
+<canvas id='example3' class='textView' width='600' height='112'> </canvas>
+
+</div>

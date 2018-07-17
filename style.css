@@ -1,0 +1,200 @@
+canvas {
+    border: 1px solid #7B899B;
+    position:absolute;
+}
+
+canvas.textView {
+    float: left;
+    margin-top: 12px;
+    margin-left: 69px;
+}
+
+.separator, .separator2 {
+    clear:both;
+    height:0;
+}
+
+.separator { 
+    margin-bottom:105px
+}
+
+.separator2 {
+    width:600px;
+}
+
+.Toolbar, .Toolbar2, .ToolbarOption, .ToolbarOption2 {
+    background: #F2F7FE;
+    border: 1px solid #7B899B;
+    float:left;
+
+}
+
+.Toolbar {
+	width:67px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+
+}
+
+.Toolbar2 {
+    width:380px;
+    height:47px;
+    margin-left: 69px;
+    margin-top: 12px;
+
+}
+
+.Toolbar2 p { 
+    margin-top:0px;
+    margin-left:12px;
+    margin-bottom:0px;
+}
+
+.btn {
+    margin-left: 12px;
+    margin-top: 24px;
+    width:210
+
+}
+
+.ToolbarOption {
+    margin-top: 1px;
+    width:294px;
+    margin-left: 69px;
+}
+
+.ToolbarOption img {
+    margin:0;
+	
+}
+
+.Toolbarhidden {
+    display:none;
+
+}
+
+.ToolbarOption2 {
+
+    margin-top: 1px;
+    margin-left: 10px;
+    width:294px;
+}
+
+.Toolbar2 select { 
+    margin:12px;
+    margin-right: -7px;
+}
+
+.Toolbar2 #pen_type {
+
+    margin:12px;
+    width:243px;
+
+}
+
+.ToolbarOption p, .ToolbarOption2 p { 
+    margin:12px;
+}
+
+
+.ToolbarOption p input { 
+    margin-left:12px;
+    width:120px;
+}
+
+.ToolbarOption p.style2 select { 
+    margin-left:12px;
+    margin-top:1px;
+    width:148px;
+}
+
+.Toolbar2 select.razmer { 
+    width:50px;
+}
+
+.Toolbar2  input.stroka {
+    margin:12px;
+    width:350px;
+    padding-left:3px;
+}
+
+
+.span1, .span2, .span3 {
+    margin:8px;
+    width:31px;
+    height:9px;
+    border: 1px solid black;
+    visibility:hidden;
+}    
+
+.span1 {
+    outline:6px solid #A8D8FF;
+}
+
+.span2, .span3 {
+    margin-top:13px;   
+    background: #9BA5AD;
+}
+
+.span3 {
+    border: 1px solid #9BA5AD;
+}
+
+img {
+    padding-left: 3px;
+    padding-top: 4px;
+    padding-right:6px; 
+    padding-bottom:6px;
+    border: 2px solid #F2F7FE;
+    border-radius:3pt;
+    margin-bottom:2px;
+    margin-right:-3px;
+}
+
+img.normal {
+   border:2px solid #F2F7FE;
+   background:#F2F7FE;
+}
+
+img.active, img:hover {
+   border:2px groove #E4F0FE;
+   background:white 
+}
+
+.color1, .color2 {
+     border:none; 
+     width:28px;
+     padding:0px;
+}
+
+.color1 {
+
+    margin:2px;
+    margin-left:17px;
+    margin-top:-15px;
+    margin-bottom:6px;
+}
+
+.color2 {
+    margin:4px;
+    margin-top:6px;
+
+}
+
+.color, .options {
+
+    width:48px;
+    border: 1px solid #7B899B;
+    margin-left: 9px;
+}
+
+.color {
+    margin-bottom:9px;
+
+}
+
+.options {
+    height:75px;
+    margin-bottom: 14px;
+
+}
